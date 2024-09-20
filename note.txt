@@ -1,0 +1,49 @@
+designing the alert box using *react toastify*
+refer this*
+in this page copy the gist 2nd imprt to app.jsx T
+change alert  to toast.(waning ,error,success,info)
+
+to install-npm i react-toastify
+
+
+ <div className='container-fluid border border-3 border-dark shadow p-1'>
+      {
+        data.length>0 
+        <div className='row p-2'>
+          {data.map(item=>(
+            <VideoCards/>
+          ))}
+        </div>
+        :
+        <h4 className='text-danger text-center'>No Videos Available!!</h4>
+      }
+    
+    </div>
+
+
+    prop Sharing
+    -----------
+    -its a technique used to pass data from parent component to child component
+
+    parent.jsx\
+
+    retrn(
+
+      <child data={contnt}/>
+
+    )
+
+    child.jsx\
+
+    function Child(prop){
+
+    }
+
+    prop=>{data:contnt}
+
+
+
+    state lifting
+    --------------
+
+    
